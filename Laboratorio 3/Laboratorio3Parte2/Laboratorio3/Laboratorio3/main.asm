@@ -1,6 +1,6 @@
 ;**********************
 ; Universidad del Valle de Guatemala 
-; IE2023:: Programación de Microcontroladores
+; IE2023:: ProgramaciÃ³n de Microcontroladores
 ; Laboratorio3.asm
 ; Autor: Santiago Burgos
 ; Proyecto: Laboratorio 3
@@ -38,16 +38,16 @@ SETUP:
 	
 	CALL INIT_T0
 
-	LDI R20, 0			;COUNTER FOR TIMER
-	LDI R21, 0			;COUNTER FOR DISPLAY
+	LDI R20, 0			;CONTADOR PARA EL TIMER
+	LDI R21, 0			;CONTADOR PARA EL DISPLAY
 
-	SEI					;ENABLE GLOBAL INTERRUPTIONS
+	SEI				;HABILITA TODAS AS INTERRUPCIONES
 
 
 LOOP:
-	CPI R20, 99			; 100 * 10ms = 1000ms
+	CPI R20, 99			; PARA QUE ME CUENTE LOS 1000ms
 	BRNE LOOP
-	CLR R20				;IT CLEARS R20
+	CLR R20		
 
 	CALL DISPLAY
 
@@ -95,11 +95,10 @@ INIT_T0:
 ISR_TIMER0:
 	
 
-	LDI R16, 99			;VALUE OF TIMER OVERFLOW
-	OUT TCNT0, R16		;LOAD THE OVERFLOW VALUE
-	SBI TIFR0, TOV0		;TURN OFF FLAG
-	INC R20				;INCREASE COUNTER OF 10ms
-
+	LDI R16, 99			;VALOR DE OVERFLOW DEL TIMER
+	OUT TCNT0, R16		
+	SBI TIFR0, TOV0			;APAGA LA BANDERA
+	INC R20				
 
 	RETI
 
