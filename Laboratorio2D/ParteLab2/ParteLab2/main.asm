@@ -1,0 +1,91 @@
+;**********************
+; Universidad del Valle de Guatemala 
+; IE2023:: Programación de Microcontroladores
+; Lab02.asm
+; Autor: Santiago Burgos
+; Proyecto: Laboratorio 2
+; Hardware: ATMega328P
+; Creado: 06/02/2024
+;**********************
+; ENCABEZADO
+;************************
+
+.include "M328PDEF.inc"
+.cseg
+.org 0x00
+//*************************
+// Stack
+LDI R16, LOW(RAMEND)
+OUT SPL, R16
+LDI R17, HIGH(RAMEND)
+OUT SPH, R17
+// CONFIGURACION
+//*************************
+
+TABLA7SEG: .DB 0x3F, 0x06, 0x5B, 0x4F, 0X66, 0X6D, 0X7D, 0X07, 0X7F, 0X6F, 0X77, 0X7C, 0X39, 0X5E, 0X79, 0X71
+
+SETUP:
+	LDI R16, 0b1000_0000
+	LDI R16, (1 << CLKPCE)
+	STS CLKPR, R16				;	PRESCALER
+	LDI R16, 0b0000_1000				;2MHZ
+	STS CLKPR, R16				 	
+
+	
+	LDI R16, 0b0000_0011
+	OUT PORTC, R16				;DECLARO INPUTS
+
+
+	LDI R16, 0b1111_1100			;	DECLARO SALIDAS ES B Y D
+	OUT DDRD, R16
+	LDI R16, 0b0000_00001
+	OUT DDRB, R16
+
+	LDI R18, 0						;CONTADOR
+	LDI R20, 0
+LOOP:
+	MOV R18, R20
+	
+	LDI ZH, HIGH(TABLA7SEG << 1)
+	LDI ZL, LOW(TABLA7SEG << 1)
+	ADD ZL, R18
+	LPM R18, Z 
+	SBRC R18, 6
+	SBI PINB, PB0					; SI ESTA ENCENDIDO LO ENCIENDE
+	SBRS R18, 6
+	CBI PINB, PB0					; SI ESTA APAGADO LO APAGA 
+	LSL R18
+	LSL R18
+	
+	OUT PORTD, R18
+
+	
+	IN R16, PINC
+	SBRS R16, PC0				;	SI 1 SIGUE
+	RJMP DELAYBOUNCE			;	ANTIREBOTE
+	IN R17, PINC
+	SBRS R17, PC1
+	RJMP DELAYBOUNCE_2
+	RJMP LOOP
+ 
+DELAYBOUNCE:
+	LDI R16, 100			
+	delay:
+		DEC R16
+		BRNE delay
+
+	SBIS PINC, PC0				;	SI ES 1
+	RJMP DELAYBOUNCE		
+	INC R20
+RJMP LOOP
+
+DELAYBOUNCE_2:
+	LDI R17, 100				
+	delay_2:
+		DEC R17
+		BRNE delay_2
+	
+	SBIS PINC, PC1			
+	RJMP DELAYBOUNCE_2	
+	DEC R20
+RJMP LOOP
