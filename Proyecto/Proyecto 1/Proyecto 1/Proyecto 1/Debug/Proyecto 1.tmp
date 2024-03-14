@@ -1,0 +1,124 @@
+<ASSEMBLER_INFO>
+ <VERSION>2.2.8</VERSION>
+ <DEVICE>"ATmega328P"</DEVICE>
+ <WORKING_DIR>C:\Users\SANTIAGO\OneDrive\Desktop\UVG\5to Semestre\Progra de micros\Proyecto\Proyecto 1\Proyecto 1\Proyecto 1\Debug</WORKING_DIR>
+ <INCLUDE_PATH>
+  <DIR>C:/Program Files (x86)\Atmel\Studio\7.0\Packs\atmel\ATmega_DFP\1.7.374\avrasm\inc</DIR>
+  <DIR>C:\Program Files (x86)\Atmel\Studio\7.0\toolchain\avr8\avrassembler\Include</DIR>
+  <DIR></DIR>
+ </INCLUDE_PATH>
+ <SOURCE_FILE>C:\Users\SANTIAGO\OneDrive\Desktop\UVG\5to Semestre\Progra de micros\Proyecto\Proyecto 1\Proyecto 1\Proyecto 1\main.asm</SOURCE_FILE>
+ <INCLUDED_FILES>
+  <FILE>C:/Program Files (x86)\Atmel\Studio\7.0\Packs\atmel\ATmega_DFP\1.7.374\avrasm\inc\m328Pdef.inc</FILE>
+  <FILE>C:/Program Files (x86)\Atmel\Studio\7.0\Packs\atmel\ATmega_DFP\1.7.374\avrasm\inc\M328PDEF.inc</FILE>
+ </INCLUDED_FILES>
+ <OBJECT_FILES>
+  <FILE>C:\Users\SANTIAGO\OneDrive\Desktop\UVG\5to Semestre\Progra de micros\Proyecto\Proyecto 1\Proyecto 1\Proyecto 1\Debug\Proyecto 1.obj</FILE>
+ </OBJECT_FILES>
+ <HEX_FILES>
+  <FILE>Proyecto 1.hex</FILE>
+ </HEX_FILES>
+ <OUTPUT_FILES>
+  <FILE>Proyecto 1.map</FILE>
+  <FILE>Proyecto 1.lss</FILE>
+ </OUTPUT_FILES>
+ <LABELS>
+  <MAIN><FILE>C:\Users\SANTIAGO\OneDrive\Desktop\UVG\5to Semestre\Progra de micros\Proyecto\Proyecto 1\Proyecto 1\Proyecto 1\main.asm</FILE><LINE>33</LINE></MAIN>
+  <ISR_PCINT1><FILE>C:\Users\SANTIAGO\OneDrive\Desktop\UVG\5to Semestre\Progra de micros\Proyecto\Proyecto 1\Proyecto 1\Proyecto 1\main.asm</FILE><LINE>1203</LINE></ISR_PCINT1>
+  <ISR_TIMER0><FILE>C:\Users\SANTIAGO\OneDrive\Desktop\UVG\5to Semestre\Progra de micros\Proyecto\Proyecto 1\Proyecto 1\Proyecto 1\main.asm</FILE><LINE>1186</LINE></ISR_TIMER0>
+  <D7SEG><FILE>C:\Users\SANTIAGO\OneDrive\Desktop\UVG\5to Semestre\Progra de micros\Proyecto\Proyecto 1\Proyecto 1\Proyecto 1\main.asm</FILE><LINE>40</LINE></D7SEG>
+  <SETUP><FILE>C:\Users\SANTIAGO\OneDrive\Desktop\UVG\5to Semestre\Progra de micros\Proyecto\Proyecto 1\Proyecto 1\Proyecto 1\main.asm</FILE><LINE>46</LINE></SETUP>
+  <INIT_T0><FILE>C:\Users\SANTIAGO\OneDrive\Desktop\UVG\5to Semestre\Progra de micros\Proyecto\Proyecto 1\Proyecto 1\Proyecto 1\main.asm</FILE><LINE>1175</LINE></INIT_T0>
+  <LOOP><FILE>C:\Users\SANTIAGO\OneDrive\Desktop\UVG\5to Semestre\Progra de micros\Proyecto\Proyecto 1\Proyecto 1\Proyecto 1\main.asm</FILE><LINE>126</LINE></LOOP>
+  <STATE_XXX0><FILE>C:\Users\SANTIAGO\OneDrive\Desktop\UVG\5to Semestre\Progra de micros\Proyecto\Proyecto 1\Proyecto 1\Proyecto 1\main.asm</FILE><LINE>136</LINE></STATE_XXX0>
+  <STATE_XXX1><FILE>C:\Users\SANTIAGO\OneDrive\Desktop\UVG\5to Semestre\Progra de micros\Proyecto\Proyecto 1\Proyecto 1\Proyecto 1\main.asm</FILE><LINE>148</LINE></STATE_XXX1>
+  <STATE_XX00><FILE>C:\Users\SANTIAGO\OneDrive\Desktop\UVG\5to Semestre\Progra de micros\Proyecto\Proyecto 1\Proyecto 1\Proyecto 1\main.asm</FILE><LINE>142</LINE></STATE_XX00>
+  <STATE_XX10><FILE>C:\Users\SANTIAGO\OneDrive\Desktop\UVG\5to Semestre\Progra de micros\Proyecto\Proyecto 1\Proyecto 1\Proyecto 1\main.asm</FILE><LINE>172</LINE></STATE_XX10>
+  <STATE_X000><FILE>C:\Users\SANTIAGO\OneDrive\Desktop\UVG\5to Semestre\Progra de micros\Proyecto\Proyecto 1\Proyecto 1\Proyecto 1\main.asm</FILE><LINE>154</LINE></STATE_X000>
+  <STATE_X100><FILE>C:\Users\SANTIAGO\OneDrive\Desktop\UVG\5to Semestre\Progra de micros\Proyecto\Proyecto 1\Proyecto 1\Proyecto 1\main.asm</FILE><LINE>195</LINE></STATE_X100>
+  <STATE_XX01><FILE>C:\Users\SANTIAGO\OneDrive\Desktop\UVG\5to Semestre\Progra de micros\Proyecto\Proyecto 1\Proyecto 1\Proyecto 1\main.asm</FILE><LINE>160</LINE></STATE_XX01>
+  <STATE_XX11><FILE>C:\Users\SANTIAGO\OneDrive\Desktop\UVG\5to Semestre\Progra de micros\Proyecto\Proyecto 1\Proyecto 1\Proyecto 1\main.asm</FILE><LINE>184</LINE></STATE_XX11>
+  <STATE_0000><FILE>C:\Users\SANTIAGO\OneDrive\Desktop\UVG\5to Semestre\Progra de micros\Proyecto\Proyecto 1\Proyecto 1\Proyecto 1\main.asm</FILE><LINE>227</LINE></STATE_0000>
+  <STATE_1000><FILE>C:\Users\SANTIAGO\OneDrive\Desktop\UVG\5to Semestre\Progra de micros\Proyecto\Proyecto 1\Proyecto 1\Proyecto 1\main.asm</FILE><LINE>434</LINE></STATE_1000>
+  <STATE_X001><FILE>C:\Users\SANTIAGO\OneDrive\Desktop\UVG\5to Semestre\Progra de micros\Proyecto\Proyecto 1\Proyecto 1\Proyecto 1\main.asm</FILE><LINE>166</LINE></STATE_X001>
+  <STATE_X101><FILE>C:\Users\SANTIAGO\OneDrive\Desktop\UVG\5to Semestre\Progra de micros\Proyecto\Proyecto 1\Proyecto 1\Proyecto 1\main.asm</FILE><LINE>200</LINE></STATE_X101>
+  <STATE_0001><FILE>C:\Users\SANTIAGO\OneDrive\Desktop\UVG\5to Semestre\Progra de micros\Proyecto\Proyecto 1\Proyecto 1\Proyecto 1\main.asm</FILE><LINE>299</LINE></STATE_0001>
+  <STATE_1001><FILE>C:\Users\SANTIAGO\OneDrive\Desktop\UVG\5to Semestre\Progra de micros\Proyecto\Proyecto 1\Proyecto 1\Proyecto 1\main.asm</FILE><LINE>450</LINE></STATE_1001>
+  <STATE_X010><FILE>C:\Users\SANTIAGO\OneDrive\Desktop\UVG\5to Semestre\Progra de micros\Proyecto\Proyecto 1\Proyecto 1\Proyecto 1\main.asm</FILE><LINE>178</LINE></STATE_X010>
+  <STATE_X110><FILE>C:\Users\SANTIAGO\OneDrive\Desktop\UVG\5to Semestre\Progra de micros\Proyecto\Proyecto 1\Proyecto 1\Proyecto 1\main.asm</FILE><LINE>206</LINE></STATE_X110>
+  <STATE_0010><FILE>C:\Users\SANTIAGO\OneDrive\Desktop\UVG\5to Semestre\Progra de micros\Proyecto\Proyecto 1\Proyecto 1\Proyecto 1\main.asm</FILE><LINE>318</LINE></STATE_0010>
+  <STATE_1010><FILE>C:\Users\SANTIAGO\OneDrive\Desktop\UVG\5to Semestre\Progra de micros\Proyecto\Proyecto 1\Proyecto 1\Proyecto 1\main.asm</FILE><LINE>455</LINE></STATE_1010>
+  <STATE_X011><FILE>C:\Users\SANTIAGO\OneDrive\Desktop\UVG\5to Semestre\Progra de micros\Proyecto\Proyecto 1\Proyecto 1\Proyecto 1\main.asm</FILE><LINE>190</LINE></STATE_X011>
+  <STATE_X111><FILE>C:\Users\SANTIAGO\OneDrive\Desktop\UVG\5to Semestre\Progra de micros\Proyecto\Proyecto 1\Proyecto 1\Proyecto 1\main.asm</FILE><LINE>212</LINE></STATE_X111>
+  <STATE_0011><FILE>C:\Users\SANTIAGO\OneDrive\Desktop\UVG\5to Semestre\Progra de micros\Proyecto\Proyecto 1\Proyecto 1\Proyecto 1\main.asm</FILE><LINE>334</LINE></STATE_0011>
+  <STATE_0100><FILE>C:\Users\SANTIAGO\OneDrive\Desktop\UVG\5to Semestre\Progra de micros\Proyecto\Proyecto 1\Proyecto 1\Proyecto 1\main.asm</FILE><LINE>358</LINE></STATE_0100>
+  <STATE_0101><FILE>C:\Users\SANTIAGO\OneDrive\Desktop\UVG\5to Semestre\Progra de micros\Proyecto\Proyecto 1\Proyecto 1\Proyecto 1\main.asm</FILE><LINE>370</LINE></STATE_0101>
+  <STATE_0110><FILE>C:\Users\SANTIAGO\OneDrive\Desktop\UVG\5to Semestre\Progra de micros\Proyecto\Proyecto 1\Proyecto 1\Proyecto 1\main.asm</FILE><LINE>387</LINE></STATE_0110>
+  <STATE_0111><FILE>C:\Users\SANTIAGO\OneDrive\Desktop\UVG\5to Semestre\Progra de micros\Proyecto\Proyecto 1\Proyecto 1\Proyecto 1\main.asm</FILE><LINE>421</LINE></STATE_0111>
+  <COMPARE_STATE_0><FILE>C:\Users\SANTIAGO\OneDrive\Desktop\UVG\5to Semestre\Progra de micros\Proyecto\Proyecto 1\Proyecto 1\Proyecto 1\main.asm</FILE><LINE>221</LINE></COMPARE_STATE_0>
+  <DISPLAY_1><FILE>C:\Users\SANTIAGO\OneDrive\Desktop\UVG\5to Semestre\Progra de micros\Proyecto\Proyecto 1\Proyecto 1\Proyecto 1\main.asm</FILE><LINE>982</LINE></DISPLAY_1>
+  <DISPLAY_2><FILE>C:\Users\SANTIAGO\OneDrive\Desktop\UVG\5to Semestre\Progra de micros\Proyecto\Proyecto 1\Proyecto 1\Proyecto 1\main.asm</FILE><LINE>1020</LINE></DISPLAY_2>
+  <DISPLAY_3><FILE>C:\Users\SANTIAGO\OneDrive\Desktop\UVG\5to Semestre\Progra de micros\Proyecto\Proyecto 1\Proyecto 1\Proyecto 1\main.asm</FILE><LINE>1055</LINE></DISPLAY_3>
+  <DISPLAY_4><FILE>C:\Users\SANTIAGO\OneDrive\Desktop\UVG\5to Semestre\Progra de micros\Proyecto\Proyecto 1\Proyecto 1\Proyecto 1\main.asm</FILE><LINE>1090</LINE></DISPLAY_4>
+  <DISPLAY_5><FILE>C:\Users\SANTIAGO\OneDrive\Desktop\UVG\5to Semestre\Progra de micros\Proyecto\Proyecto 1\Proyecto 1\Proyecto 1\main.asm</FILE><LINE>1130</LINE></DISPLAY_5>
+  <COMPARE_STATE_1><FILE>C:\Users\SANTIAGO\OneDrive\Desktop\UVG\5to Semestre\Progra de micros\Proyecto\Proyecto 1\Proyecto 1\Proyecto 1\main.asm</FILE><LINE>293</LINE></COMPARE_STATE_1>
+  <COMPARE_STATE_6><FILE>C:\Users\SANTIAGO\OneDrive\Desktop\UVG\5to Semestre\Progra de micros\Proyecto\Proyecto 1\Proyecto 1\Proyecto 1\main.asm</FILE><LINE>382</LINE></COMPARE_STATE_6>
+  <SET_AL_D2><FILE>C:\Users\SANTIAGO\OneDrive\Desktop\UVG\5to Semestre\Progra de micros\Proyecto\Proyecto 1\Proyecto 1\Proyecto 1\main.asm</FILE><LINE>954</LINE></SET_AL_D2>
+  <INT_STATE_XXX0><FILE>C:\Users\SANTIAGO\OneDrive\Desktop\UVG\5to Semestre\Progra de micros\Proyecto\Proyecto 1\Proyecto 1\Proyecto 1\main.asm</FILE><LINE>467</LINE></INT_STATE_XXX0>
+  <INT_STATE_XX00><FILE>C:\Users\SANTIAGO\OneDrive\Desktop\UVG\5to Semestre\Progra de micros\Proyecto\Proyecto 1\Proyecto 1\Proyecto 1\main.asm</FILE><LINE>473</LINE></INT_STATE_XX00>
+  <INT_STATE_XX10><FILE>C:\Users\SANTIAGO\OneDrive\Desktop\UVG\5to Semestre\Progra de micros\Proyecto\Proyecto 1\Proyecto 1\Proyecto 1\main.asm</FILE><LINE>503</LINE></INT_STATE_XX10>
+  <INT_STATE_X000><FILE>C:\Users\SANTIAGO\OneDrive\Desktop\UVG\5to Semestre\Progra de micros\Proyecto\Proyecto 1\Proyecto 1\Proyecto 1\main.asm</FILE><LINE>485</LINE></INT_STATE_X000>
+  <INT_STATE_X100><FILE>C:\Users\SANTIAGO\OneDrive\Desktop\UVG\5to Semestre\Progra de micros\Proyecto\Proyecto 1\Proyecto 1\Proyecto 1\main.asm</FILE><LINE>528</LINE></INT_STATE_X100>
+  <INT_STATE_XXX1><FILE>C:\Users\SANTIAGO\OneDrive\Desktop\UVG\5to Semestre\Progra de micros\Proyecto\Proyecto 1\Proyecto 1\Proyecto 1\main.asm</FILE><LINE>479</LINE></INT_STATE_XXX1>
+  <INT_STATE_XX01><FILE>C:\Users\SANTIAGO\OneDrive\Desktop\UVG\5to Semestre\Progra de micros\Proyecto\Proyecto 1\Proyecto 1\Proyecto 1\main.asm</FILE><LINE>491</LINE></INT_STATE_XX01>
+  <INT_STATE_XX11><FILE>C:\Users\SANTIAGO\OneDrive\Desktop\UVG\5to Semestre\Progra de micros\Proyecto\Proyecto 1\Proyecto 1\Proyecto 1\main.asm</FILE><LINE>515</LINE></INT_STATE_XX11>
+  <INT_STATE_0000><FILE>C:\Users\SANTIAGO\OneDrive\Desktop\UVG\5to Semestre\Progra de micros\Proyecto\Proyecto 1\Proyecto 1\Proyecto 1\main.asm</FILE><LINE>560</LINE></INT_STATE_0000>
+  <INT_STATE_1000><FILE>C:\Users\SANTIAGO\OneDrive\Desktop\UVG\5to Semestre\Progra de micros\Proyecto\Proyecto 1\Proyecto 1\Proyecto 1\main.asm</FILE><LINE>912</LINE></INT_STATE_1000>
+  <INT_STATE_X001><FILE>C:\Users\SANTIAGO\OneDrive\Desktop\UVG\5to Semestre\Progra de micros\Proyecto\Proyecto 1\Proyecto 1\Proyecto 1\main.asm</FILE><LINE>497</LINE></INT_STATE_X001>
+  <INT_STATE_X101><FILE>C:\Users\SANTIAGO\OneDrive\Desktop\UVG\5to Semestre\Progra de micros\Proyecto\Proyecto 1\Proyecto 1\Proyecto 1\main.asm</FILE><LINE>535</LINE></INT_STATE_X101>
+  <INT_STATE_0001><FILE>C:\Users\SANTIAGO\OneDrive\Desktop\UVG\5to Semestre\Progra de micros\Proyecto\Proyecto 1\Proyecto 1\Proyecto 1\main.asm</FILE><LINE>614</LINE></INT_STATE_0001>
+  <INT_STATE_1001><FILE>C:\Users\SANTIAGO\OneDrive\Desktop\UVG\5to Semestre\Progra de micros\Proyecto\Proyecto 1\Proyecto 1\Proyecto 1\main.asm</FILE><LINE>939</LINE></INT_STATE_1001>
+  <INT_STATE_X010><FILE>C:\Users\SANTIAGO\OneDrive\Desktop\UVG\5to Semestre\Progra de micros\Proyecto\Proyecto 1\Proyecto 1\Proyecto 1\main.asm</FILE><LINE>509</LINE></INT_STATE_X010>
+  <INT_STATE_X110><FILE>C:\Users\SANTIAGO\OneDrive\Desktop\UVG\5to Semestre\Progra de micros\Proyecto\Proyecto 1\Proyecto 1\Proyecto 1\main.asm</FILE><LINE>541</LINE></INT_STATE_X110>
+  <INT_STATE_0010><FILE>C:\Users\SANTIAGO\OneDrive\Desktop\UVG\5to Semestre\Progra de micros\Proyecto\Proyecto 1\Proyecto 1\Proyecto 1\main.asm</FILE><LINE>692</LINE></INT_STATE_0010>
+  <INT_STATE_1010><FILE>C:\Users\SANTIAGO\OneDrive\Desktop\UVG\5to Semestre\Progra de micros\Proyecto\Proyecto 1\Proyecto 1\Proyecto 1\main.asm</FILE><LINE>968</LINE></INT_STATE_1010>
+  <INT_STATE_X011><FILE>C:\Users\SANTIAGO\OneDrive\Desktop\UVG\5to Semestre\Progra de micros\Proyecto\Proyecto 1\Proyecto 1\Proyecto 1\main.asm</FILE><LINE>521</LINE></INT_STATE_X011>
+  <INT_STATE_X111><FILE>C:\Users\SANTIAGO\OneDrive\Desktop\UVG\5to Semestre\Progra de micros\Proyecto\Proyecto 1\Proyecto 1\Proyecto 1\main.asm</FILE><LINE>548</LINE></INT_STATE_X111>
+  <INT_STATE_0011><FILE>C:\Users\SANTIAGO\OneDrive\Desktop\UVG\5to Semestre\Progra de micros\Proyecto\Proyecto 1\Proyecto 1\Proyecto 1\main.asm</FILE><LINE>712</LINE></INT_STATE_0011>
+  <ISR_POP><FILE>C:\Users\SANTIAGO\OneDrive\Desktop\UVG\5to Semestre\Progra de micros\Proyecto\Proyecto 1\Proyecto 1\Proyecto 1\main.asm</FILE><LINE>1213</LINE></ISR_POP>
+  <INT_STATE_0100><FILE>C:\Users\SANTIAGO\OneDrive\Desktop\UVG\5to Semestre\Progra de micros\Proyecto\Proyecto 1\Proyecto 1\Proyecto 1\main.asm</FILE><LINE>747</LINE></INT_STATE_0100>
+  <INT_STATE_0101><FILE>C:\Users\SANTIAGO\OneDrive\Desktop\UVG\5to Semestre\Progra de micros\Proyecto\Proyecto 1\Proyecto 1\Proyecto 1\main.asm</FILE><LINE>761</LINE></INT_STATE_0101>
+  <INT_STATE_0110><FILE>C:\Users\SANTIAGO\OneDrive\Desktop\UVG\5to Semestre\Progra de micros\Proyecto\Proyecto 1\Proyecto 1\Proyecto 1\main.asm</FILE><LINE>775</LINE></INT_STATE_0110>
+  <INT_STATE_0111><FILE>C:\Users\SANTIAGO\OneDrive\Desktop\UVG\5to Semestre\Progra de micros\Proyecto\Proyecto 1\Proyecto 1\Proyecto 1\main.asm</FILE><LINE>832</LINE></INT_STATE_0111>
+  <INCREASE_MINUTE><FILE>C:\Users\SANTIAGO\OneDrive\Desktop\UVG\5to Semestre\Progra de micros\Proyecto\Proyecto 1\Proyecto 1\Proyecto 1\main.asm</FILE><LINE>575</LINE></INCREASE_MINUTE>
+  <INCREMENTAR><FILE>C:\Users\SANTIAGO\OneDrive\Desktop\UVG\5to Semestre\Progra de micros\Proyecto\Proyecto 1\Proyecto 1\Proyecto 1\main.asm</FILE><LINE>588</LINE></INCREMENTAR>
+  <INCREMENTAR_2><FILE>C:\Users\SANTIAGO\OneDrive\Desktop\UVG\5to Semestre\Progra de micros\Proyecto\Proyecto 1\Proyecto 1\Proyecto 1\main.asm</FILE><LINE>591</LINE></INCREMENTAR_2>
+  <DECREASE_MINUTE><FILE>C:\Users\SANTIAGO\OneDrive\Desktop\UVG\5to Semestre\Progra de micros\Proyecto\Proyecto 1\Proyecto 1\Proyecto 1\main.asm</FILE><LINE>595</LINE></DECREASE_MINUTE>
+  <DECREASE><FILE>C:\Users\SANTIAGO\OneDrive\Desktop\UVG\5to Semestre\Progra de micros\Proyecto\Proyecto 1\Proyecto 1\Proyecto 1\main.asm</FILE><LINE>607</LINE></DECREASE>
+  <DECREASE_2><FILE>C:\Users\SANTIAGO\OneDrive\Desktop\UVG\5to Semestre\Progra de micros\Proyecto\Proyecto 1\Proyecto 1\Proyecto 1\main.asm</FILE><LINE>610</LINE></DECREASE_2>
+  <INCREASE_HOUR><FILE>C:\Users\SANTIAGO\OneDrive\Desktop\UVG\5to Semestre\Progra de micros\Proyecto\Proyecto 1\Proyecto 1\Proyecto 1\main.asm</FILE><LINE>634</LINE></INCREASE_HOUR>
+  <INCREMENTAR_HORA><FILE>C:\Users\SANTIAGO\OneDrive\Desktop\UVG\5to Semestre\Progra de micros\Proyecto\Proyecto 1\Proyecto 1\Proyecto 1\main.asm</FILE><LINE>648</LINE></INCREMENTAR_HORA>
+  <INC_HOUR><FILE>C:\Users\SANTIAGO\OneDrive\Desktop\UVG\5to Semestre\Progra de micros\Proyecto\Proyecto 1\Proyecto 1\Proyecto 1\main.asm</FILE><LINE>660</LINE></INC_HOUR>
+  <INC_HOUR_2><FILE>C:\Users\SANTIAGO\OneDrive\Desktop\UVG\5to Semestre\Progra de micros\Proyecto\Proyecto 1\Proyecto 1\Proyecto 1\main.asm</FILE><LINE>664</LINE></INC_HOUR_2>
+  <DECREASE_HOUR><FILE>C:\Users\SANTIAGO\OneDrive\Desktop\UVG\5to Semestre\Progra de micros\Proyecto\Proyecto 1\Proyecto 1\Proyecto 1\main.asm</FILE><LINE>669</LINE></DECREASE_HOUR>
+  <DECREASE_><FILE>C:\Users\SANTIAGO\OneDrive\Desktop\UVG\5to Semestre\Progra de micros\Proyecto\Proyecto 1\Proyecto 1\Proyecto 1\main.asm</FILE><LINE>682</LINE></DECREASE_>
+  <DECREASE_HOUR_2_CLOCK><FILE>C:\Users\SANTIAGO\OneDrive\Desktop\UVG\5to Semestre\Progra de micros\Proyecto\Proyecto 1\Proyecto 1\Proyecto 1\main.asm</FILE><LINE>687</LINE></DECREASE_HOUR_2_CLOCK>
+  <INCREASE_DAYS><FILE>C:\Users\SANTIAGO\OneDrive\Desktop\UVG\5to Semestre\Progra de micros\Proyecto\Proyecto 1\Proyecto 1\Proyecto 1\main.asm</FILE><LINE>724</LINE></INCREASE_DAYS>
+  <INCREASE_DAYS_D2><FILE>C:\Users\SANTIAGO\OneDrive\Desktop\UVG\5to Semestre\Progra de micros\Proyecto\Proyecto 1\Proyecto 1\Proyecto 1\main.asm</FILE><LINE>740</LINE></INCREASE_DAYS_D2>
+  <INCREASE_DAYS_D3><FILE>C:\Users\SANTIAGO\OneDrive\Desktop\UVG\5to Semestre\Progra de micros\Proyecto\Proyecto 1\Proyecto 1\Proyecto 1\main.asm</FILE><LINE>743</LINE></INCREASE_DAYS_D3>
+  <INCREASE_MINUTE_ALARM><FILE>C:\Users\SANTIAGO\OneDrive\Desktop\UVG\5to Semestre\Progra de micros\Proyecto\Proyecto 1\Proyecto 1\Proyecto 1\main.asm</FILE><LINE>788</LINE></INCREASE_MINUTE_ALARM>
+  <INCREMENTAR_AL><FILE>C:\Users\SANTIAGO\OneDrive\Desktop\UVG\5to Semestre\Progra de micros\Proyecto\Proyecto 1\Proyecto 1\Proyecto 1\main.asm</FILE><LINE>800</LINE></INCREMENTAR_AL>
+  <INCREMENTAR_2_AL><FILE>C:\Users\SANTIAGO\OneDrive\Desktop\UVG\5to Semestre\Progra de micros\Proyecto\Proyecto 1\Proyecto 1\Proyecto 1\main.asm</FILE><LINE>803</LINE></INCREMENTAR_2_AL>
+  <DECREASE_MINUTE_AL><FILE>C:\Users\SANTIAGO\OneDrive\Desktop\UVG\5to Semestre\Progra de micros\Proyecto\Proyecto 1\Proyecto 1\Proyecto 1\main.asm</FILE><LINE>807</LINE></DECREASE_MINUTE_AL>
+  <DECREASE_AL><FILE>C:\Users\SANTIAGO\OneDrive\Desktop\UVG\5to Semestre\Progra de micros\Proyecto\Proyecto 1\Proyecto 1\Proyecto 1\main.asm</FILE><LINE>822</LINE></DECREASE_AL>
+  <DECREASE_2_AL><FILE>C:\Users\SANTIAGO\OneDrive\Desktop\UVG\5to Semestre\Progra de micros\Proyecto\Proyecto 1\Proyecto 1\Proyecto 1\main.asm</FILE><LINE>825</LINE></DECREASE_2_AL>
+  <INCREASE_HOUR_ALARM><FILE>C:\Users\SANTIAGO\OneDrive\Desktop\UVG\5to Semestre\Progra de micros\Proyecto\Proyecto 1\Proyecto 1\Proyecto 1\main.asm</FILE><LINE>855</LINE></INCREASE_HOUR_ALARM>
+  <INCREMENTAR_HORA_ALARMA><FILE>C:\Users\SANTIAGO\OneDrive\Desktop\UVG\5to Semestre\Progra de micros\Proyecto\Proyecto 1\Proyecto 1\Proyecto 1\main.asm</FILE><LINE>869</LINE></INCREMENTAR_HORA_ALARMA>
+  <INCREMENTAR_AL_HOUR><FILE>C:\Users\SANTIAGO\OneDrive\Desktop\UVG\5to Semestre\Progra de micros\Proyecto\Proyecto 1\Proyecto 1\Proyecto 1\main.asm</FILE><LINE>882</LINE></INCREMENTAR_AL_HOUR>
+  <INCREMENTAR_2_AL_HOUR><FILE>C:\Users\SANTIAGO\OneDrive\Desktop\UVG\5to Semestre\Progra de micros\Proyecto\Proyecto 1\Proyecto 1\Proyecto 1\main.asm</FILE><LINE>886</LINE></INCREMENTAR_2_AL_HOUR>
+  <DECREASE_HOUR_AL><FILE>C:\Users\SANTIAGO\OneDrive\Desktop\UVG\5to Semestre\Progra de micros\Proyecto\Proyecto 1\Proyecto 1\Proyecto 1\main.asm</FILE><LINE>890</LINE></DECREASE_HOUR_AL>
+  <DECREASE_AL_HOUR><FILE>C:\Users\SANTIAGO\OneDrive\Desktop\UVG\5to Semestre\Progra de micros\Proyecto\Proyecto 1\Proyecto 1\Proyecto 1\main.asm</FILE><LINE>904</LINE></DECREASE_AL_HOUR>
+  <DECREASE_2_AL_HOUR><FILE>C:\Users\SANTIAGO\OneDrive\Desktop\UVG\5to Semestre\Progra de micros\Proyecto\Proyecto 1\Proyecto 1\Proyecto 1\main.asm</FILE><LINE>907</LINE></DECREASE_2_AL_HOUR>
+  <COMPARE_BUZZER><FILE>C:\Users\SANTIAGO\OneDrive\Desktop\UVG\5to Semestre\Progra de micros\Proyecto\Proyecto 1\Proyecto 1\Proyecto 1\main.asm</FILE><LINE>951</LINE></COMPARE_BUZZER>
+ </LABELS>
+</ASSEMBLER_INFO>
