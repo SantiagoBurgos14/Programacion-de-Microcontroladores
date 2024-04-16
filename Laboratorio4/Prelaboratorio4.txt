@@ -1,0 +1,66 @@
+/*
+ * Universidad del Valle de Guatemala
+ * Laboratorio4.c
+ *
+ * Created: 4/8/2024 11:20:05 PM
+ * Author : Santiago Burgos
+ */ 
+
+#define F_CPU 16000000
+
+#include <avr/io.h>
+#include <avr/interrupt.h>
+#include <util/delay.h>
+#include <stdint.h>
+
+
+uint8_t counter = 0;
+
+/*
+ ********************************************************
+ */ 
+
+void initPCINT1(void);
+
+int main(void)
+{	
+	cli();
+	DDRD = 0xFF;
+	PORTD = 0;
+	UCSR0B = 0;
+	
+	PORTC|= (1 << PINC0) | (1 << PINC1);
+	DDRC &= ~(1 << PINC0) | ~(1 << PINC1);
+
+    initPCINT1();
+	sei();
+    while (1) 
+    {
+		// inicia secuencia de adc
+		//ADCSRA |= (1<< ADSC);
+		//_delay_ms(100);
+		PORTD = counter;
+		 
+    }
+}
+
+
+void initPCINT1(void){
+	
+	PCICR |= (1 << PCIE1);
+	PCMSK1 |= (1 << PCINT8) | (1 << PCINT9);
+
+}
+
+
+ISR(PCINT1_vect){
+	
+	if (!(PINC & (1 <<PINC0))){
+		counter++;
+	} else if(!(PINC &(1 <<PINC1))){
+		counter--;
+	}else{
+		counter = counter;
+	}
+	
+}

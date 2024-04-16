@@ -1,0 +1,55 @@
+/*
+ * Universidad del Valle de Guatemala
+ * Laboratorio4.c
+ *
+ * Created: 4/8/2024 11:20:05 PM
+ * Author : Santiago Burgos
+ */ 
+
+#define F_CPU 16000000
+
+#include <avr/io.h>
+#include <avr/interrupt.h>
+#include <util/delay.h>
+#include <stdint.h>
+
+uint8_t counter = 0;
+uint8_t display[16] = {0x3F,0x06,0x5B,0x4F,0x66,0x6D,0x7D,0x07,0x7F,0x6F,0x77,0x7C,0x39,0x5E,0x79,0x71};
+
+void initPCINT1(void);
+
+void initADC(void);
+
+int main(void);{
+
+	cli();
+	DDRD = 0xFF;			//POTD COMO SALIDA
+	PORTD = 0;					
+	UCSR0B = 0;				// DESACTIVO RX Y TX
+
+	PORTC|= (1 << PINC0) | (1 << PINC1);
+	DDRC &= ~(1 << PINC0) | ~(1 << PINC1);		//PUSHBUTTONS
+
+	DDRB |= (1 << PINB0) | (1 << PINB1) | (1 << PINB2);
+	PORTB = 0;
+	//PORTB |= (1 << PORTC1);
+
+	
+	initPCINT1();
+	initADC();	
+	
+	sei();
+}
+
+
+while (1){
+
+	ADCSRA | = (1<<ADSC);
+	_delay_ms(5);
+
+	uint8_tvalorHex = ADCH;
+	uint8_tvalor1 = valorHex/16;
+	uint8_tvalor2 = valorHex?
+	
+
+}
