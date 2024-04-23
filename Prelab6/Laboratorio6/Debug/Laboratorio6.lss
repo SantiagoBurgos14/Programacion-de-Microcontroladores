@@ -1,0 +1,233 @@
+
+Laboratorio6.elf:     file format elf32-avr
+
+Sections:
+Idx Name          Size      VMA       LMA       File off  Algn
+  0 .data         00000000  00800100  00800100  000001ba  2**0
+                  CONTENTS, ALLOC, LOAD, DATA
+  1 .text         00000146  00000000  00000000  00000074  2**1
+                  CONTENTS, ALLOC, LOAD, READONLY, CODE
+  2 .bss          00000001  00800100  00800100  000001ba  2**0
+                  ALLOC
+  3 .comment      00000030  00000000  00000000  000001ba  2**0
+                  CONTENTS, READONLY
+  4 .note.gnu.avr.deviceinfo 00000040  00000000  00000000  000001ec  2**2
+                  CONTENTS, READONLY
+  5 .debug_aranges 00000038  00000000  00000000  0000022c  2**0
+                  CONTENTS, READONLY, DEBUGGING
+  6 .debug_info   00000767  00000000  00000000  00000264  2**0
+                  CONTENTS, READONLY, DEBUGGING
+  7 .debug_abbrev 0000069a  00000000  00000000  000009cb  2**0
+                  CONTENTS, READONLY, DEBUGGING
+  8 .debug_line   000002aa  00000000  00000000  00001065  2**0
+                  CONTENTS, READONLY, DEBUGGING
+  9 .debug_frame  00000064  00000000  00000000  00001310  2**2
+                  CONTENTS, READONLY, DEBUGGING
+ 10 .debug_str    000003bd  00000000  00000000  00001374  2**0
+                  CONTENTS, READONLY, DEBUGGING
+ 11 .debug_loc    0000003c  00000000  00000000  00001731  2**0
+                  CONTENTS, READONLY, DEBUGGING
+ 12 .debug_ranges 00000028  00000000  00000000  0000176d  2**0
+                  CONTENTS, READONLY, DEBUGGING
+
+Disassembly of section .text:
+
+00000000 <__vectors>:
+   0:	0c 94 34 00 	jmp	0x68	; 0x68 <__ctors_end>
+   4:	0c 94 46 00 	jmp	0x8c	; 0x8c <__bad_interrupt>
+   8:	0c 94 46 00 	jmp	0x8c	; 0x8c <__bad_interrupt>
+   c:	0c 94 46 00 	jmp	0x8c	; 0x8c <__bad_interrupt>
+  10:	0c 94 46 00 	jmp	0x8c	; 0x8c <__bad_interrupt>
+  14:	0c 94 46 00 	jmp	0x8c	; 0x8c <__bad_interrupt>
+  18:	0c 94 46 00 	jmp	0x8c	; 0x8c <__bad_interrupt>
+  1c:	0c 94 46 00 	jmp	0x8c	; 0x8c <__bad_interrupt>
+  20:	0c 94 46 00 	jmp	0x8c	; 0x8c <__bad_interrupt>
+  24:	0c 94 46 00 	jmp	0x8c	; 0x8c <__bad_interrupt>
+  28:	0c 94 46 00 	jmp	0x8c	; 0x8c <__bad_interrupt>
+  2c:	0c 94 46 00 	jmp	0x8c	; 0x8c <__bad_interrupt>
+  30:	0c 94 46 00 	jmp	0x8c	; 0x8c <__bad_interrupt>
+  34:	0c 94 46 00 	jmp	0x8c	; 0x8c <__bad_interrupt>
+  38:	0c 94 46 00 	jmp	0x8c	; 0x8c <__bad_interrupt>
+  3c:	0c 94 46 00 	jmp	0x8c	; 0x8c <__bad_interrupt>
+  40:	0c 94 46 00 	jmp	0x8c	; 0x8c <__bad_interrupt>
+  44:	0c 94 46 00 	jmp	0x8c	; 0x8c <__bad_interrupt>
+  48:	0c 94 86 00 	jmp	0x10c	; 0x10c <__vector_18>
+  4c:	0c 94 46 00 	jmp	0x8c	; 0x8c <__bad_interrupt>
+  50:	0c 94 46 00 	jmp	0x8c	; 0x8c <__bad_interrupt>
+  54:	0c 94 46 00 	jmp	0x8c	; 0x8c <__bad_interrupt>
+  58:	0c 94 46 00 	jmp	0x8c	; 0x8c <__bad_interrupt>
+  5c:	0c 94 46 00 	jmp	0x8c	; 0x8c <__bad_interrupt>
+  60:	0c 94 46 00 	jmp	0x8c	; 0x8c <__bad_interrupt>
+  64:	0c 94 46 00 	jmp	0x8c	; 0x8c <__bad_interrupt>
+
+00000068 <__ctors_end>:
+  68:	11 24       	eor	r1, r1
+  6a:	1f be       	out	0x3f, r1	; 63
+  6c:	cf ef       	ldi	r28, 0xFF	; 255
+  6e:	d8 e0       	ldi	r29, 0x08	; 8
+  70:	de bf       	out	0x3e, r29	; 62
+  72:	cd bf       	out	0x3d, r28	; 61
+
+00000074 <__do_clear_bss>:
+  74:	21 e0       	ldi	r18, 0x01	; 1
+  76:	a0 e0       	ldi	r26, 0x00	; 0
+  78:	b1 e0       	ldi	r27, 0x01	; 1
+  7a:	01 c0       	rjmp	.+2      	; 0x7e <.do_clear_bss_start>
+
+0000007c <.do_clear_bss_loop>:
+  7c:	1d 92       	st	X+, r1
+
+0000007e <.do_clear_bss_start>:
+  7e:	a1 30       	cpi	r26, 0x01	; 1
+  80:	b2 07       	cpc	r27, r18
+  82:	e1 f7       	brne	.-8      	; 0x7c <.do_clear_bss_loop>
+  84:	0e 94 6e 00 	call	0xdc	; 0xdc <main>
+  88:	0c 94 a1 00 	jmp	0x142	; 0x142 <_exit>
+
+0000008c <__bad_interrupt>:
+  8c:	0c 94 00 00 	jmp	0	; 0x0 <__vectors>
+
+00000090 <initUART9600>:
+    }
+}
+
+void initUART9600(void){
+	//Configurar RXy TX
+	DDRD &= ~(1 << DDD0);		//Rx entrada
+  90:	8a b1       	in	r24, 0x0a	; 10
+  92:	8e 7f       	andi	r24, 0xFE	; 254
+  94:	8a b9       	out	0x0a, r24	; 10
+	DDRD |= (1 << DDD1);		//TX salida
+  96:	8a b1       	in	r24, 0x0a	; 10
+  98:	82 60       	ori	r24, 0x02	; 2
+  9a:	8a b9       	out	0x0a, r24	; 10
+	
+	
+	UCSR0A = 0;
+  9c:	e0 ec       	ldi	r30, 0xC0	; 192
+  9e:	f0 e0       	ldi	r31, 0x00	; 0
+  a0:	10 82       	st	Z, r1
+	UCSR0A |= (1 << U2X0); // Fast Mode de comunicacion 
+  a2:	80 81       	ld	r24, Z
+  a4:	82 60       	ori	r24, 0x02	; 2
+  a6:	80 83       	st	Z, r24
+	
+	
+	UCSR0B = 0;			//configuracion de registros
+  a8:	e1 ec       	ldi	r30, 0xC1	; 193
+  aa:	f0 e0       	ldi	r31, 0x00	; 0
+  ac:	10 82       	st	Z, r1
+	UCSR0B |= (1 << RXCIE0) | (1 << RXEN0) | (1 << TXEN0); //activa interrupcion para rx y TX  
+  ae:	80 81       	ld	r24, Z
+  b0:	88 69       	ori	r24, 0x98	; 152
+  b2:	80 83       	st	Z, r24
+	
+	
+	UCSR0C = 0;			// configuracion de registros
+  b4:	e2 ec       	ldi	r30, 0xC2	; 194
+  b6:	f0 e0       	ldi	r31, 0x00	; 0
+  b8:	10 82       	st	Z, r1
+	UCSR0C |= (1 << UCSZ01) | (1 << UCSZ00);		// tamaño del caracter un bit y sin pariedad
+  ba:	80 81       	ld	r24, Z
+  bc:	86 60       	ori	r24, 0x06	; 6
+  be:	80 83       	st	Z, r24
+	
+	UBRR0 = 207;		// 9600 Baud rate
+  c0:	8f ec       	ldi	r24, 0xCF	; 207
+  c2:	90 e0       	ldi	r25, 0x00	; 0
+  c4:	90 93 c5 00 	sts	0x00C5, r25	; 0x8000c5 <__TEXT_REGION_LENGTH__+0x7f80c5>
+  c8:	80 93 c4 00 	sts	0x00C4, r24	; 0x8000c4 <__TEXT_REGION_LENGTH__+0x7f80c4>
+  cc:	08 95       	ret
+
+000000ce <wUART>:
+}
+
+
+void wUART(char singleChar){
+	
+	while(!(UCSR0A & (1 << UDRE0)));  // si el bufer esta lleno no envia ni recibe
+  ce:	90 91 c0 00 	lds	r25, 0x00C0	; 0x8000c0 <__TEXT_REGION_LENGTH__+0x7f80c0>
+  d2:	95 ff       	sbrs	r25, 5
+  d4:	fc cf       	rjmp	.-8      	; 0xce <wUART>
+	UDR0 = singleChar;  //Lee y guarda
+  d6:	80 93 c6 00 	sts	0x00C6, r24	; 0x8000c6 <__TEXT_REGION_LENGTH__+0x7f80c6>
+  da:	08 95       	ret
+
+000000dc <main>:
+
+volatile char bufferRX;		//Volatil porque cambia 
+
+int main(void)
+{
+	initUART9600();
+  dc:	0e 94 48 00 	call	0x90	; 0x90 <initUART9600>
+	sei();
+  e0:	78 94       	sei
+	DDRB = 0xFF; // Salidas
+  e2:	8f ef       	ldi	r24, 0xFF	; 255
+  e4:	84 b9       	out	0x04, r24	; 4
+	DDRD = 0XFF;
+  e6:	8a b9       	out	0x0a, r24	; 10
+	
+	wUART('H');
+  e8:	88 e4       	ldi	r24, 0x48	; 72
+  ea:	0e 94 67 00 	call	0xce	; 0xce <wUART>
+	wUART('A');
+  ee:	81 e4       	ldi	r24, 0x41	; 65
+  f0:	0e 94 67 00 	call	0xce	; 0xce <wUART>
+	wUART('L');
+  f4:	8c e4       	ldi	r24, 0x4C	; 76
+  f6:	0e 94 67 00 	call	0xce	; 0xce <wUART>
+	wUART('L');
+  fa:	8c e4       	ldi	r24, 0x4C	; 76
+  fc:	0e 94 67 00 	call	0xce	; 0xce <wUART>
+	wUART('O');
+ 100:	8f e4       	ldi	r24, 0x4F	; 79
+ 102:	0e 94 67 00 	call	0xce	; 0xce <wUART>
+	PORTB=0;
+ 106:	15 b8       	out	0x05, r1	; 5
+	PORTD=0;
+ 108:	1b b8       	out	0x0b, r1	; 11
+ 10a:	ff cf       	rjmp	.-2      	; 0x10a <main+0x2e>
+
+0000010c <__vector_18>:
+	UDR0 = singleChar;  //Lee y guarda
+	
+}
+
+//ISR, recieve
+ISR(USART_RX_vect){
+ 10c:	1f 92       	push	r1
+ 10e:	0f 92       	push	r0
+ 110:	0f b6       	in	r0, 0x3f	; 63
+ 112:	0f 92       	push	r0
+ 114:	11 24       	eor	r1, r1
+ 116:	8f 93       	push	r24
+	bufferRX = UDR0;
+ 118:	80 91 c6 00 	lds	r24, 0x00C6	; 0x8000c6 <__TEXT_REGION_LENGTH__+0x7f80c6>
+ 11c:	80 93 00 01 	sts	0x0100, r24	; 0x800100 <__DATA_REGION_ORIGIN__>
+
+	while(!(UCSR0A & (1 << UDRE0)));   // si el bufer esta lleno no envia ni recibe
+ 120:	80 91 c0 00 	lds	r24, 0x00C0	; 0x8000c0 <__TEXT_REGION_LENGTH__+0x7f80c0>
+ 124:	85 ff       	sbrs	r24, 5
+ 126:	fc cf       	rjmp	.-8      	; 0x120 <__vector_18+0x14>
+	UDR0 = bufferRX;  // muestra lo guardado en buffer
+ 128:	80 91 00 01 	lds	r24, 0x0100	; 0x800100 <__DATA_REGION_ORIGIN__>
+ 12c:	80 93 c6 00 	sts	0x00C6, r24	; 0x8000c6 <__TEXT_REGION_LENGTH__+0x7f80c6>
+	
+	PORTB = bufferRX;   //Convertir un caracter a entero
+ 130:	80 91 00 01 	lds	r24, 0x0100	; 0x800100 <__DATA_REGION_ORIGIN__>
+ 134:	85 b9       	out	0x05, r24	; 5
+}
+ 136:	8f 91       	pop	r24
+ 138:	0f 90       	pop	r0
+ 13a:	0f be       	out	0x3f, r0	; 63
+ 13c:	0f 90       	pop	r0
+ 13e:	1f 90       	pop	r1
+ 140:	18 95       	reti
+
+00000142 <_exit>:
+ 142:	f8 94       	cli
+
+00000144 <__stop_program>:
+ 144:	ff cf       	rjmp	.-2      	; 0x144 <__stop_program>
